@@ -14,7 +14,19 @@ For this, we use the require() function.
 ## Loading the libraries if needed
 require(knitr)
 require(ggplot2)
+```
+
+```
+## Loading required package: ggplot2
+## Need help? Try the ggplot2 mailing list: http://groups.google.com/group/ggplot2.
+```
+
+```r
 require(plyr)
+```
+
+```
+## Loading required package: plyr
 ```
 
 For non-English environments (like mine which is in French), change the default
@@ -151,7 +163,7 @@ ggplot(stepsEachDayFull, aes(x = steps)) +
 
 ![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11-1.png) 
 
-Now, I calculate the new mean and median total number of steps taken per day.
+Then, I calculate the new mean and median total number of steps taken per day.
 
 ```r
 mean_steps_full <- mean(stepsEachDayFull$steps,na.rm=TRUE) #mean per day

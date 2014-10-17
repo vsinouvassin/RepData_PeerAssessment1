@@ -126,7 +126,7 @@ ggplot(stepsEachDayFull, aes(x = steps)) +
         theme_bw()
 ```
 
-Now, I calculate the new mean and median total number of steps taken per day.
+Then, I calculate the new mean and median total number of steps taken per day.
 ```{r}
 mean_steps_full <- mean(stepsEachDayFull$steps,na.rm=TRUE) #mean per day
 median_steps_full <- median(stepsEachDayFull$steps,na.rm=TRUE) #median per day
